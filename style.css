@@ -1,77 +1,86 @@
-/* Importação de fonte do Google Fonts (opcional) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Estilos Globais */
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "WDXL Lubrifont TC", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Azul muito claro, quase branco */
+    background-color: #abcae4;
     color: #333;
     line-height: 1.6;
-}
 
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
 
-/* Cabeçalho (Header) */
+}
 header {
-    background-color: #191970; /* Azul escuro (MidnightBlue) */
+    background-color: #28285e;
     color: white;
     text-align: center;
     padding: 40px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3.2em;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+
+   margin: 0;
+   font-size: 3.2em;
+   font-weight: 700;
+   letter-spacing: 1.5px;
+
 }
 
 header p {
+
     font-size: 1.2em;
     opacity: 0.9;
+
 }
 
-/* Navegação (Nav) */
 nav {
-    background-color: #4169e1; /* Azul royal (RoyalBlue) */
+
+    background-color: rgb(95, 99, 160);
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+     
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+
 }
 
 nav ul li {
-    margin: 0 20px;
+
+    margin: 20px;
+
 }
 
 nav ul li a {
+
     color: white;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1em;
     transition: color 0.3s ease;
+
 }
 
 nav ul li a:hover {
-    color: #cceeff; /* Azul mais claro para hover */
+    color: #cceeff;
     text-decoration: underline;
+
 }
 
-/* Seções Principais (Main) */
 main {
     padding: 40px 20px;
     max-width: 1000px;
@@ -79,149 +88,25 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.05);
+
 }
 
-section {
-    padding: 40px 0;
-    border-bottom: 1px solid #eee;
+main {
+    background-color: #c6d8e7;
+
 }
 
-section:last-child {
-    border-bottom: none;
-}
-
-h2 {
-    font-size: 2.5em;
-    color: #191970; /* Azul escuro */
+.galeria {
+    background: #c6d8e7;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    position: relative;
+
 }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #4169e1; /* Azul royal */
-    margin: 10px auto 0;
-    border-radius: 2px;
-}
+.galeria img {
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #c6d8e7;
 
-p {
-    font-size: 1.1em;
-    text-align: justify;
-    max-width: 800px;
-    margin: 15px auto;
-}
-
-/* Seção Hero (Sobre) */
-.hero {
-    text-align: center;
-    background-color: #e0f2f7; /* Azul claro para a seção hero */
-    padding: 60px 20px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.3em;
-    max-width: 900px;
-    margin: 20px auto;
-}
-
-/* Seção de Cards (Produtos) */
-.cards-section {
-    text-align: center;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.card {
-    background-color: #f0f8ff; /* Azul muito claro */
-    border: 1px solid #b0e0e6; /* Azul claro acinzentado */
-    border-radius: 8px;
-    padding: 25px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-}
-
-.card h3 {
-    color: #191970; /* Azul escuro */
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 1em;
-    color: #555;
-    text-align: center;
-    margin: 0;
-}
-
-/* Seções de Conteúdo Geral */
-.content-section p {
-    text-align: center; /* Centraliza o texto para estas seções */
-    margin: 15px auto;
-}
-
-
-/* Rodapé (Footer) */
-footer {
-    background-color: #191970; /* Azul escuro */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 0.9em;
-}
-
-/* Responsividade Básica */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-    header p {
-        font-size: 1em;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 5px 0;
-    }
-    main {
-        padding: 20px;
-        margin: 10px;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .hero h2 {
-        font-size: 2.5em;
-    }
-    .hero p {
-        font-size: 1.1em;
-    }
-    .card {
-        width: 90%; /* Ocupa mais espaço em telas menores */
-    }
 }
